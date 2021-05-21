@@ -118,8 +118,7 @@
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
             <p class="staticrypt-title">Colectivos en calle</p>
-            <p><p><a href="https://github.com/SSPMOCABA/tableros/blob/0a00f39340a657f6564022e35ae221678f9c088b/drone_fondo.jpg" target="_blank"><img alt="" src="https://github.com/SSPMOCABA/tableros/blob/0a00f39340a657f6564022e35ae221678f9c088b/drone_fondo.jpg" style="float:left; height:200px; width:300px" /></a></p>
-</p>
+            <p></p>
         </div>
 
         <hr class="staticrypt-hr">
@@ -6165,7 +6164,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'b38edc8e24bc32564d5a62a161fb6cca262734901b4fe29c0f8365cd02ff9e279ec3e05497de1002454513aeca2a13129721d3325fee697eba93bd404134556aRy4H/EA1ZbxEKXeaOwbXCaxD0rVq61GuDd8GYAjx4gOT0DDHsdyfXZCkCv6AP4g8ExY0opDoi5jREJK6vr4RwEWUvuyLjZ1Lt3oZsp6cvKTWeOoMsgWeYXbcH5kP+sRPFKsmHYMSrY/t1WkZEbuczXmwNlRvAwpQrAlZ7evLpMxwtBwqzP7iABLFBOUC0BvlHfBJtf/PIl2yvHjllrKuqPRlDeveeUIYKuJkNgjsDN78U2OjPjUV3CRSogCqRDN9BUqwMLWt3HwivmIbBNYfvPYMUBXw4/IPq0j4aEhxbblI8h52RqE+HLT5mk+L0gjN4XXxUxFZTZGUguxcUPDHiJTii9Zd8J5wyE5BEEHz8vguTqg0xCyI6Z40sJK75SrnMxQezmPOrv7vtEDuanDebTqxd1iSrP/G9oMSDzoae+zEkFFWq4ft+pYnwsGxHD+yu8CY8KAwG8xe9DTqRqTjwtOlvI+epnGL9XrMguga/wKZuPgIW/6ORq7gbEJFNFlkZJ2JMFlIk1lqlT+QMtNOnU3eEZ70kLVArC3TicY5T1DTuwlbcw+irVxvaOtBmzdk',
+            encryptedMsg = '39822450f8bd5df34a66ed190ef5d6546d05ea18640cf8f08438ee3741982c34c6180e353aa6de4b4cfd392d67f4525935c85fa595a2ca212e12fff22e44c5e4Sdol11sbyBa9uzyVQZZUN2t3+edP4jR+gj/npBrZMQn9Ff/vHLF2kLDgWtEibsPpzscTal0MS14mE154rmbZYu7QBUE8LxlcFgLkE8D1YmSZPsYeFdyxcKPI2HhZ9rFxatyQNg/MZyrevAweDIc2s2chshBlaq7ghHkf1/hRMdWch23TLe8+RVGJdnSQgefhKn7iQIs5Z9B4mOPopw0feqldh2CB/XtSzYfTHATrH1jEqBV8zcsukiG5S8OYuEsVTCLRiDxT220TwBbK7nBAsw6OyVo3ucUFxrp1rIenZqLb6k8RUw+nVO7KZuY0RQbGRFVhWZ8mwmUznHKD1GOj81Ji0mATFjDn3rLJ08gGsqF7+8yIujLXrE2zuuLDvzBbqc4+P4G1IbT+InymMCJW+9545+W3J/Fi4bdzjlb1ykeEKQhui1iZ3bCRrrGF6o6WKEe5H1Pyorkwf+j+YC5zoA8Dn+P+HlaZMeJ9JOaXC3kJXFqAflE3URfsdEfEc45S6Bwu0nJSHz+njWW4eHZK2vvWg/X5COqZ02SzLXPvJJKxIFL34Q7N4qsuzOZmTPaQ',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
@@ -6183,3 +6182,4 @@
 </script>
 </body>
 </html>
+
