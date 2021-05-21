@@ -127,7 +127,7 @@
             <input id="staticrypt-password"
                    type="password"
                    name="password"
-                   placeholder="passphrase"
+                   placeholder="Contraseña..."
                    autofocus/>
 
             <input type="submit" class="staticrypt-decrypt-button" value="INGRESAR"/>
@@ -6170,7 +6170,7 @@
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
 
         if (decryptedHMAC !== encryptedHMAC) {
-            alert('Bad passphrase!');
+            alert('¡Contraseña incorrecta!');
             return;
         }
 
