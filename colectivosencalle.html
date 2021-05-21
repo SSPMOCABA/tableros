@@ -130,7 +130,7 @@
                    placeholder="passphrase"
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+            <input type="submit" class="staticrypt-decrypt-button" value="INGRESAR"/>
         </form>
     </div>
 
@@ -6164,7 +6164,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '39822450f8bd5df34a66ed190ef5d6546d05ea18640cf8f08438ee3741982c34c6180e353aa6de4b4cfd392d67f4525935c85fa595a2ca212e12fff22e44c5e4Sdol11sbyBa9uzyVQZZUN2t3+edP4jR+gj/npBrZMQn9Ff/vHLF2kLDgWtEibsPpzscTal0MS14mE154rmbZYu7QBUE8LxlcFgLkE8D1YmSZPsYeFdyxcKPI2HhZ9rFxatyQNg/MZyrevAweDIc2s2chshBlaq7ghHkf1/hRMdWch23TLe8+RVGJdnSQgefhKn7iQIs5Z9B4mOPopw0feqldh2CB/XtSzYfTHATrH1jEqBV8zcsukiG5S8OYuEsVTCLRiDxT220TwBbK7nBAsw6OyVo3ucUFxrp1rIenZqLb6k8RUw+nVO7KZuY0RQbGRFVhWZ8mwmUznHKD1GOj81Ji0mATFjDn3rLJ08gGsqF7+8yIujLXrE2zuuLDvzBbqc4+P4G1IbT+InymMCJW+9545+W3J/Fi4bdzjlb1ykeEKQhui1iZ3bCRrrGF6o6WKEe5H1Pyorkwf+j+YC5zoA8Dn+P+HlaZMeJ9JOaXC3kJXFqAflE3URfsdEfEc45S6Bwu0nJSHz+njWW4eHZK2vvWg/X5COqZ02SzLXPvJJKxIFL34Q7N4qsuzOZmTPaQ',
+            encryptedMsg = '6da66810e46323f7a5c7f2b9a4e0d59ad084115e28fbc5ff7d149598a379f48ad3e7a394313763d62b6dda3fc8ae780d5f55e37358a3e5cfc6628b343b1b51b228A9nWyvufndkRh0YgPLv4vX7lkHnvzS08tpV6YpXrSSf9THE/HEOqnpYUzE6lpSbihpnD6Inyv6tGh6MB7i5xD6C0enLKR0Z7pJGaQqvGZINd6tK24tfncrwEpU6J+lpgElttnNlGllMtcZAOxJUkkEU7RsFugPJ+UiR/j39Pthh8cjpzMQdpiDwmkE+8g6FLnCCrzyMgfm/uZXknOt0ekqfAItnrkT16o3Goxrd5XGoWQB67Kvn6R66vNjbhazw6oAH/+5fhMnuRZqhTNhwbu8gQvo8191OL+WusIw5MbYBCEBA9b/FZB/8EFJZuuTRKRc04gGfsVLijqYXvANqMBKRsOwJziVxjMnjILIG3W9JA6tSKT5R2mzhnM3E0Y1L6tnNN/nHyAjZAHf0ntI5E5vTIAt6nsLIDg1VaxcOMLufmxrSqmzByoFbOKVBeBB8fM5nwBbpy5sazZj4sCtfl8PVpqop1XQi2T742y4MGLKqijPfSA/1J69LmroxvT0rdSLfvLxQUt+De1RA6ohOdI2sXlwnOcg6VkazU402era1/XQh3+yv5r7DZY9q8m6',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
@@ -6182,4 +6182,5 @@
 </script>
 </body>
 </html>
+
 
